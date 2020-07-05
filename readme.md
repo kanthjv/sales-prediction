@@ -48,9 +48,10 @@
 
     Prediction Step
     Finally, uses three different algorithms for sales prediction. They are 
-      linear regression
-      ridge
+      linear regression,
+      ridge,
       decision tree regression and their respective scores are
+      
   Linear Regression
   1202.1221141316933
   CV_SCORE : mean - 1203 | std - 41.73 | max - 1284 | min – 1151
