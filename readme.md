@@ -3,8 +3,11 @@
 3.	importing test data set
 4.	returns total number of null values in each column of train data set
 5.	plotting correlation matrix of test dataset and train dataset
-DATA PREPROCESSING
-The main aim of this step is to standardize the data which means removing all the empty values and zero values and filling with respective values with mean or mode of respective column
+
+  DATA PREPROCESSING
+  The main aim of this step is to standardize the data which means removing all the empty values and zero values and filling with respective values with mean or mode of      respective column
+  
+  
 6.	find the total number of each item in Item_Fat_Content column
 7.	find the total number of each item in Item_Type column
 8.	find the total number of each item in Outlet_Identifier column
@@ -18,9 +21,13 @@ The main aim of this step is to standardize the data which means removing all th
 16.	find the label of each column of dataset
 17.	filtering out categorical columns 
 18.	find the frequencies of these categories
-Three columns of data contain empty cells. They are” Item_Weight”, “Outlet_Size” and “Item_Outlet_Sales”.
+
+    Three columns of data contain empty cells. They are” Item_Weight”, “Outlet_Size” and “Item_Outlet_Sales”.
+
 19.	So, initially replace all the zero values of the column with mean of the respective column.
-Then, fill the empty values of ‘Outlet_Size’ column with the mode of respective column
+
+    Then, fill the empty values of ‘Outlet_Size’ column with the mode of respective column
+
 20.	import mode function
 21.	mapping the items of Outlet_Size column
 22.	creating a table with items of "Outlet_Type" as columns and 'Outlet_Size' as row and mode of each
@@ -38,20 +45,21 @@ Then, fill the empty values of ‘Outlet_Size’ column with the mode of respect
 32.	updating Item_Type_Combined
 33.	creating new coulmn with how many years it passed since 2013
 34.	updating "Item_Fat_Content" column
-Prediction Step
-Finally, uses three different algorithms for sales prediction. They are 
-linear regression
-ridge
-decision tree regression and their respective scores are
-Linear Regression
-1202.1221141316933
-CV_SCORE : mean - 1203 | std - 41.73 | max - 1284 | min – 1151
 
-ridge
-1058.9440596918816
-CV_SCORE : mean - 1093 | std - 45.53 | max - 1184 | min – 1011
+    Prediction Step
+    Finally, uses three different algorithms for sales prediction. They are 
+      linear regression
+      ridge
+      decision tree regression and their respective scores are
+  Linear Regression
+  1202.1221141316933
+  CV_SCORE : mean - 1203 | std - 41.73 | max - 1284 | min – 1151
 
-Decision Tree regression
-1070.1302266626526
-CV_SCORE : mean - 1097 | std - 43.03 | max - 1174 | min - 1027
+  ridge
+  1058.9440596918816
+  CV_SCORE : mean - 1093 | std - 45.53 | max - 1184 | min – 1011
+
+  Decision Tree regression
+  1070.1302266626526
+  CV_SCORE : mean - 1097 | std - 43.03 | max - 1174 | min - 1027
 
